@@ -16,8 +16,8 @@
         <p> EDIT PAGE </p>
         <form action="/articles/<%= @article.id %>" method="post">
             <input id="hidden" type="hidden" name="_method" value="patch">
-            <p>Article Title: <input type="text" name="title" placeholder='<%= @article.title %>'></p>
-            <p>Article Content: <input type="text" name="content" placeholder='<%= @article.content %>'></p>
+            <p>Article Title: <input type="text" name=article[title] placeholder='<%= @article.title %>'></p>
+            <p>Article Content: <input type="text" name=article[content] placeholder='<%= @article.content %>'></p>
             <input type="submit" value="Submit">
         </form> 
     </body>
